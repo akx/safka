@@ -11,6 +11,7 @@ DEBUG = env.bool("DEBUG", default=False)
 SECRET_KEY = env.str("SECRET_KEY", default=("nom" * 20 if DEBUG else Env.NOTSET))
 ALLOWED_HOSTS = env.list("ALLOWED_HOST", default=["*"])
 
+APPEND_SLASH = True
 AUTH_USER_MODEL = "safka.User"
 LANGUAGE_CODE = "en-us"
 ROOT_URLCONF = "safka_project.urls"

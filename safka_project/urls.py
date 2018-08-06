@@ -1,4 +1,10 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-urlpatterns = [path("admin/", admin.site.urls)]
+admin.autodiscover()
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("api/", include("safka_api.urls", namespace="safka_api")),
+    path("", include("safka.urls")),
+]

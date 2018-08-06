@@ -1,0 +1,13 @@
+openapi: "3.0.0"
+paths:
+  /locations/:
+    get:
+      operationId: get_locations
+  /location/{id}/products/:
+    parameters:
+      - name: id
+        in: path
+        schema:
+          type: string
+    get:
+      operationId: get_location_products

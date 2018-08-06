@@ -6,5 +6,6 @@ pip-tools
 pytest
 pytest-cov
 pytest-django
+pyyaml
 ulid2
 whitenoise
