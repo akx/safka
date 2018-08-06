@@ -78,7 +78,10 @@ class Migration(migrations.Migration):
                 (
                     "id",
                     models.UUIDField(
-                        default=ulid2.generate_ulid_as_uuid, primary_key=True, serialize=False
+                        default=ulid2.generate_ulid_as_uuid,
+                        primary_key=True,
+                        serialize=False,
+                        editable=False,
                     ),
                 ),
                 (
