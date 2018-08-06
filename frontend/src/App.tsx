@@ -1,8 +1,13 @@
 import * as React from "react";
+import {BrowserRouter} from "react-router-dom";
 
 class App extends React.Component {
   public render() {
-    return <div className="App">Nom nom...</div>;
+    return (
+      <BrowserRouter>
+        <div className="App">Nom nom...</div>
+      </BrowserRouter>
+    );
   }
 }
 
