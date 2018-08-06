@@ -1,0 +1,10 @@
+black
+django-environ
+django>=2
+lepo
+pip-tools
+pytest
+pytest-cov
+pytest-django
+ulid2
+whitenoise
