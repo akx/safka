@@ -6,6 +6,7 @@ from safka.models import User, Location, Genre, Product, LocationProduct
 @admin.register(LocationProduct)
 class LocationProductAdmin(admin.ModelAdmin):
     raw_id_fields = ("location", "product")
+    list_select_related = ("location", "product")
 
 
 admin.site.register(User)

@@ -21,7 +21,7 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 WSGI_APPLICATION = "safka_project.wsgi.application"
-
+CAVALRY_ENABLED = bool(DEBUG)
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "cavalry.middleware.cavalry",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",

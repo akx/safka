@@ -1,4 +1,5 @@
 black
+django-cavalry
 django-environ
 django>=2
 lepo
