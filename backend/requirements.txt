@@ -4,35 +4,80 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-appdirs==1.4.3            # via black
-atomicwrites==1.1.5       # via pytest
-attrs==18.1.0             # via black, pytest
+appdirs==1.4.3
+    # via black
+atomicwrites==1.1.5
+    # via pytest
+attrs==18.1.0
+    # via
+    #   black
+    #   pytest
 black==18.6b4
-certifi==2018.4.16        # via requests
-chardet==3.0.4            # via requests
-click==6.7                # via black, pip-tools
-coverage==4.5.1           # via pytest-cov
+    # via -r requirements.in
+certifi==2018.4.16
+    # via requests
+chardet==3.0.4
+    # via requests
+click==6.7
+    # via
+    #   black
+    #   pip-tools
+coverage==4.5.1
+    # via pytest-cov
 django-cavalry==0.0.2
+    # via -r requirements.in
 django-environ==0.4.5
+    # via -r requirements.in
 django==2.1
-first==2.0.1              # via pip-tools
-idna==2.7                 # via requests
-iso8601==0.1.12           # via lepo
-jsonschema==2.6.0         # via lepo
+    # via
+    #   -r requirements.in
+    #   django-cavalry
+    #   lepo
+first==2.0.1
+    # via pip-tools
+idna==2.7
+    # via requests
+iso8601==0.1.12
+    # via lepo
+jsonschema==2.6.0
+    # via lepo
 lepo==0.2.0
-marshmallow==2.15.4       # via lepo
-more-itertools==4.3.0     # via pytest
+    # via -r requirements.in
+marshmallow==2.15.4
+    # via lepo
+more-itertools==4.3.0
+    # via pytest
 pip-tools==2.0.2
-pluggy==0.7.1             # via pytest
-py==1.5.4                 # via pytest
+    # via -r requirements.in
+pluggy==0.7.1
+    # via pytest
+py==1.5.4
+    # via pytest
 pytest-cov==2.5.1
+    # via -r requirements.in
 pytest-django==3.3.3
+    # via -r requirements.in
 pytest==3.7.1
-pytz==2018.5              # via django
-pyyaml==3.13
-requests==2.19.1          # via django-cavalry
-six==1.11.0               # via more-itertools, pip-tools, pytest
-toml==0.9.4               # via black
+    # via
+    #   -r requirements.in
+    #   pytest-cov
+    #   pytest-django
+pytz==2018.5
+    # via django
+pyyaml==5.4
+    # via -r requirements.in
+requests==2.19.1
+    # via django-cavalry
+six==1.11.0
+    # via
+    #   more-itertools
+    #   pip-tools
+    #   pytest
+toml==0.9.4
+    # via black
 ulid2==0.1.1
-urllib3==1.23             # via requests
+    # via -r requirements.in
+urllib3==1.23
+    # via requests
 whitenoise==3.3.1
+    # via -r requirements.in
